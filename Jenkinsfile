@@ -20,6 +20,15 @@ agent {
         sh "cd /var/lib/jenkins/workspace/mypetclinic ; mvn package "
       }
     }
-    
-  }
+     stage('SonarQube Analysis') 
+    {
+        steps
+        {
+        withSonarQubeEnv('sonarserver')
+          { 
+          sh "cd /var/lib/jenkins/workspace/mypetclinic ; mvn sonar:sonar "
+          }
+        }
+    }
 }
+}  
