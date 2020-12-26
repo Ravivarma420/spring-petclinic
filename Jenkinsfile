@@ -13,12 +13,6 @@ agent {
           
       }
     }
-    stage('build')
-    {
-      steps
-      {
-        sh "cd /var/lib/jenkins/workspace/mypetclinic ; mvn package
-  }
-    }
+    
   }
 }
