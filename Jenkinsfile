@@ -17,7 +17,7 @@ agent {
     {
       steps
       {
-        sh "cd /var/lib/jenkins/workspace/mypetclinic ; mvn clean install "
+        sh "cd /var/lib/jenkins/workspace/mypetclinic ; mvn package "
       }
     }
     
