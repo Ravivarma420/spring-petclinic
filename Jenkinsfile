@@ -17,7 +17,7 @@ agents any{
     {
       steps
       {
-        sh "cd /var/lib/jenkins/workspace/PetClinic ; mvn package
+        sh "cd /var/lib/jenkins/workspace/mypetclinic ; mvn package
   }
     }
   }
