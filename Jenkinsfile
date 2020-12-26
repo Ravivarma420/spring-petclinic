@@ -1,6 +1,6 @@
-pipeline{
-agents any{
-  label('master')
+pipeline {
+agent {
+  label 'master'
 }
   stages{
     
